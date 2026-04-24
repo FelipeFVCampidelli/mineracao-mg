@@ -43,7 +43,7 @@ export default function MineralDetailPage() {
             {/* Photo */}
             <div style={{ flexShrink: 0 }}>
               <img
-                src={data.photo}
+                src={import.meta.env.BASE_URL + data.photo.replace(/^\//, '')}
                 alt={data.name}
                 style={{
                   width: '200px',
