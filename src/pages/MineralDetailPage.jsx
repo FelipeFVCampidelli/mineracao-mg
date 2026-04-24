@@ -1,11 +1,16 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useMineralData } from '../hooks/useData.js'
+import { useLocale } from '../hooks/useLocale.js'
 import BackButton from '../components/BackButton.jsx'
 
 export default function MineralDetailPage() {
   const { mineralId } = useParams()
   const { data, loading } = useMineralData(mineralId)
+  const { locale, t } = useLocale()
+
+  const title = data ? (data[`title_${locale}`] || data.title) : ''
+  const description = data ? (data[`description_${locale}`] || data.description) : ''
 
   return (
     <div style={{ width: '100%', height: '100%', background: 'var(--bg)', display: 'flex', flexDirection: 'column' }}>
@@ -41,31 +46,33 @@ export default function MineralDetailPage() {
             alignItems: 'flex-start',
           }}>
             {/* Photo */}
-            <div style={{ flexShrink: 0 }}>
-              <img
-                src={import.meta.env.BASE_URL + data.photo.replace(/^\//, '')}
-                alt={data.name}
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '4px',
-                  display: 'block',
-                }}
-                onError={e => { e.target.style.display = 'none' }}
-              />
-              {data.photoCredit && (
-                <p style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '11px',
-                  color: 'var(--text-muted)',
-                  marginTop: '6px',
-                  textAlign: 'center',
-                }}>
-                  Fotógrafo: {data.photoCredit}
-                </p>
-              )}
-            </div>
+            {data.photo && (
+              <div style={{ flexShrink: 0 }}>
+                <img
+                  src={import.meta.env.BASE_URL + data.photo.replace(/^\//, '')}
+                  alt={title}
+                  style={{
+                    width: '200px',
+                    height: '200px',
+                    objectFit: 'cover',
+                    borderRadius: '4px',
+                    display: 'block',
+                  }}
+                  onError={e => { e.target.style.display = 'none' }}
+                />
+                {data.source && (
+                  <p style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: '11px',
+                    color: 'var(--text-muted)',
+                    marginTop: '6px',
+                    textAlign: 'center',
+                  }}>
+                    {t('mineral.source')}: {data.source}
+                  </p>
+                )}
+              </div>
+            )}
 
             {/* Text */}
             <div style={{ flex: 1 }}>
@@ -77,55 +84,26 @@ export default function MineralDetailPage() {
                 lineHeight: 1.3,
                 marginBottom: '20px',
               }}>
-                {data.name}
-                {data.subtitle && (
-                  <span style={{ fontWeight: 400 }}> ({data.subtitle})</span>
-                )}
-                {data.symbol && (
-                  <span style={{ fontWeight: 400 }}>: ({data.symbol})</span>
-                )}
+                {title}
               </h1>
 
-              {data.description.split('\n\n').map((para, i) => (
-                <p key={i} style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '14px',
-                  fontWeight: 300,
-                  color: 'var(--text)',
-                  lineHeight: 1.7,
-                  marginBottom: '16px',
-                }}>
-                  {para}
-                </p>
-              ))}
-
-              {data.uses?.length > 0 && (
-                <div style={{ marginTop: '8px' }}>
-                  <p style={{
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '14px',
-                    fontWeight: 400,
-                    color: 'var(--text)',
-                    marginBottom: '8px',
-                  }}>
-                    Áreas de utilização:
-                  </p>
-                  {data.uses.map((use, i) => (
+              {description
+                ? description.split('\n\n').map((para, i) => (
                     <p key={i} style={{
                       fontFamily: 'var(--font-body)',
-                      fontSize: '13px',
+                      fontSize: '14px',
                       fontWeight: 300,
                       color: 'var(--text)',
-                      lineHeight: 1.6,
-                      paddingLeft: '8px',
-                      borderLeft: '2px solid var(--accent)',
-                      marginBottom: '6px',
+                      lineHeight: 1.7,
+                      marginBottom: '16px',
                     }}>
-                      {use}
+                      {para}
                     </p>
-                  ))}
-                </div>
-              )}
+                  ))
+                : <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--text-muted)' }}>
+                    {t('mineral.soon')}
+                  </p>
+              }
             </div>
           </div>
         )}
