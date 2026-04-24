@@ -1,0 +1,47 @@
+{
+  "pt": {
+    "welcome.title": "Use um computador para ter a melhor experiência.",
+    "welcome.subtitle": "Comece clicando em Minas Gerais",
+    "welcome.ok": "Ok",
+    "map.loading": "Carregando mapa…",
+    "map.error": "Erro ao carregar GeoJSON. Verifique sua conexão.",
+    "region.minerals": "Minérios",
+    "region.municipalities": "Municípios",
+    "mineral.source": "Fonte",
+    "mineral.soon": "Descrição em breve.",
+    "mineral.loading": "Carregando…",
+    "nav.back": "← Voltar",
+    "pagination.previous": "← Anterior",
+    "pagination.next": "Ver mais →"
+  },
+  "en": {
+    "welcome.title": "Use a computer for the best experience.",
+    "welcome.subtitle": "Start by clicking on Minas Gerais",
+    "welcome.ok": "Ok",
+    "map.loading": "Loading map…",
+    "map.error": "Error loading GeoJSON. Check your connection.",
+    "region.minerals": "Minerals",
+    "region.municipalities": "Municipalities",
+    "mineral.source": "Source",
+    "mineral.soon": "Description coming soon.",
+    "mineral.loading": "Loading…",
+    "nav.back": "← Back",
+    "pagination.previous": "← Previous",
+    "pagination.next": "More →"
+  },
+  "es": {
+    "welcome.title": "Use una computadora para la mejor experiencia.",
+    "welcome.subtitle": "Comience haciendo clic en Minas Gerais",
+    "welcome.ok": "Ok",
+    "map.loading": "Cargando mapa…",
+    "map.error": "Error al cargar GeoJSON. Verifique su conexión.",
+    "region.minerals": "Minerales",
+    "region.municipalities": "Municipios",
+    "mineral.source": "Fuente",
+    "mineral.soon": "Descripción próximamente.",
+    "mineral.loading": "Cargando…",
+    "nav.back": "← Volver",
+    "pagination.previous": "← Anterior",
+    "pagination.next": "Ver más →"
+  }
+}

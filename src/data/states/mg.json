@@ -1,0 +1,103 @@
+{
+  "campo-das-vertentes": {
+    "minerals": [
+      "tantalo",
+      "niobio",
+      "cobre",
+      "manganes"
+    ]
+  },
+  "central-mineira": {
+    "minerals": [
+      "ferro",
+      "ouro",
+      "manganes"
+    ]
+  },
+  "jequitinhonha": {
+    "minerals": [
+      "ouro",
+      "granito",
+      "calcario",
+      "litio",
+      "diamante"
+    ]
+  },
+  "metropolitana-bh": {
+    "minerals": [
+      "ferro",
+      "ouro",
+      "manganes",
+      "zinco"
+    ]
+  },
+  "noroeste-de-minas": {
+    "minerals": [
+      "ferro",
+      "zinco",
+      "chumbo",
+      "prata",
+      "fosfato",
+      "niobio",
+      "calcario"
+    ]
+  },
+  "norte-de-minas": {
+    "minerals": [
+      "ferro",
+      "ouro",
+      "zinco",
+      "diamante",
+      "quartzo"
+    ]
+  },
+  "oeste-de-minas": {
+    "minerals": [
+      "ferro",
+      "calcario"
+    ]
+  },
+  "sul-sudoeste": {
+    "minerals": [
+      "ferro",
+      "ouro",
+      "manganes",
+      "calcario",
+      "terra-rara"
+    ]
+  },
+  "triangulo-mineiro": {
+    "minerals": [
+      "ouro",
+      "silica",
+      "quartzo",
+      "calcario",
+      "fosfato",
+      "agua-mineral",
+      "terra-rara"
+    ]
+  },
+  "vale-do-mucuri": {
+    "minerals": [
+      "ouro",
+      "diamante",
+      "litio",
+      "calcario",
+      "granito"
+    ]
+  },
+  "vale-do-rio-doce": {
+    "minerals": [
+      "ferro",
+      "manganes",
+      "niquel"
+    ]
+  },
+  "zona-da-mata": {
+    "minerals": [
+      "bauxita",
+      "quartzo",
+      "ferro"
+    ]
+  }
+}
