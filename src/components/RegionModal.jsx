@@ -24,7 +24,7 @@ function MineralDetail({ mineralId, onBack }) {
         <div style={{ display: 'flex', gap: '32px', alignItems: 'flex-start' }}>
           {data.photo && (
             <div style={{ flexShrink: 0 }}>
-              <img src={data.photo} alt={title} style={{ width: '180px', height: '180px', objectFit: 'cover', borderRadius: '4px', display: 'block' }} />
+              <img src={import.meta.env.BASE_URL + data.photo.replace(/^\//, '')} alt={title} style={{ width: '180px', height: '180px', objectFit: 'cover', borderRadius: '4px', display: 'block' }} />
               {data.source && <p style={{ ...styles.muted, textAlign: 'center', marginTop: 6 }}>{t('mineral.source')}: {data.source}</p>}
             </div>
           )}
