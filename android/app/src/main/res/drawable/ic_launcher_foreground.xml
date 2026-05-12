@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Diamond / gem shape in gold -->
+    <path
+        android:fillColor="#B8860B"
+        android:pathData="M54,20 L80,48 L54,88 L28,48 Z" />
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M54,20 L80,48 L54,56 L28,48 Z" />
+</vector>

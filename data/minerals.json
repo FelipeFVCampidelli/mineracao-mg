@@ -8,7 +8,11 @@
     "description_en": "The main industrial use of iron is in the production of steel (a metallic alloy composed mainly of iron and carbon).\n\nSteel is extremely widely used due to its greater hardness and toughness compared to pure iron.\n\nAreas of use:\nNaval, automotive, and aviation industries; Civil construction, tool manufacturing, household utensils, etc.",
     "description_es": "El principal uso del hierro en el ámbito industrial es la producción de acero (una aleación metálica formada, principalmente, por hierro y carbono).\n\nEl acero es extremadamente utilizado debido a su mayor dureza y tenacidad en comparación con el hierro puro.\n\nÁreas de utilización:\nIndustria naval, automovilística y de aviación; Construcción civil, producción de herramientas, utensilios domésticos, etc.",
     "photo": "/images/minerals/ferro.png",
-    "source": "Mitchell Orr"
+    "source": "Mitchell Orr",
+    "symbol": "Fe",
+    "tagline": "Siderurgia e construção",
+    "tagline_en": "Steelmaking and construction",
+    "tagline_es": "Siderurgia y construcción"
   },
   "litio": {
     "id": "litio",
@@ -19,7 +23,11 @@
     "description_en": "Lithium is a mineral of extreme importance to contemporary society! It is one of the main materials used in the production of batteries (from phones to cars).\n\nAnother use for lithium that has proven extremely efficient is as a medication in the treatment of mental disorders (such as bipolar disorder).",
     "description_es": "¡El litio es un mineral de extrema importancia para la sociedad contemporánea! Es uno de los principales materiales utilizados en la producción de baterías (desde teléfonos hasta coches).\n\nOtro uso del litio que ha demostrado ser extremadamente eficiente es como medicamento en el tratamiento de trastornos mentales (como el trastorno bipolar).",
     "photo": "/images/minerals/litio.png",
-    "source": "<SEM FONTE>"
+    "source": "<SEM FONTE>",
+    "symbol": "Li",
+    "tagline": "Baterias e saúde mental",
+    "tagline_en": "Batteries and mental health",
+    "tagline_es": "Baterías y salud mental"
   },
   "diamante": {
     "id": "diamante",
@@ -30,7 +38,11 @@
     "description_en": "Diamond is an extremely expensive material widely used in the production of equally expensive jewelry.\n\nBeyond its ornamental use, it also plays a role in industry; being used for cutting and drilling (due to its high hardness) and in some technologies that use lasers.",
     "description_es": "El diamante es un material extremadamente caro y ampliamente utilizado en la producción de joyería igualmente cara.\n\nAdemás de su uso ornamental, también desempeña un papel en la industria; siendo utilizado para cortes y perforaciones (debido a su alta dureza) y en algunas tecnologías que utilizan láseres.",
     "photo": "/images/minerals/diamante.png",
-    "source": "Bas van den Eijkhof"
+    "source": "Bas van den Eijkhof",
+    "symbol": "C",
+    "tagline": "Joalheria e indústria",
+    "tagline_en": "Jewelry and industry",
+    "tagline_es": "Joyería e industria"
   },
   "granito": {
     "id": "granito",
@@ -41,7 +53,11 @@
     "description_en": "Granite is an igneous rock widely valued for its durability, strength, and natural beauty. Due to these characteristics, it is extensively used in construction and interior design. Its most common applications include kitchen and bathroom countertops, where its resistance to scratches and heat is a great advantage.",
     "description_es": "El granito es una roca ígnea ampliamente valorada por su durabilidad, resistencia y belleza natural. Debido a estas características, se utiliza ampliamente en la construcción civil y el diseño de interiores. Sus aplicaciones más comunes incluyen encimeras de cocina y baño, donde su resistencia a los arañazos y al calor es una gran ventaja.",
     "photo": "/images/minerals/granito.png",
-    "source": "Luke Peterson"
+    "source": "Luke Peterson",
+    "symbol": "Gr",
+    "tagline": "Construção civil",
+    "tagline_en": "Civil construction",
+    "tagline_es": "Construcción civil"
   },
   "ouro": {
     "id": "ouro",
@@ -52,7 +68,11 @@
     "description_en": "Gold is a metallic material with high thermal and electrical conductivity as well as high added value.\n\nBeing a high-value item with beautiful aesthetics, it is commonly used in jewelry production.\n\nFurthermore, gold is widely used by industry in the production of electronic articles due to its high electrical conductivity.",
     "description_es": "El oro es un material metálico que presenta una alta conductividad térmica y eléctrica además de un alto valor agregado.\n\nAl ser un artículo de alto valor y bella estética, se utiliza comúnmente en la producción de joyería.\n\nAdemás, el oro es ampliamente utilizado por la industria en la producción de artículos electrónicos debido a su alta conductividad eléctrica.",
     "photo": "/images/minerals/ouro.png",
-    "source": "Marko Ivanov"
+    "source": "Marko Ivanov",
+    "symbol": "Au",
+    "tagline": "Joalheria e eletrônica",
+    "tagline_en": "Jewelry and electronics",
+    "tagline_es": "Joyería y electrónica"
   },
   "calcario": {
     "id": "calcario",
@@ -63,7 +83,11 @@
     "description_en": "In agriculture, its main use is in the practice of liming, which serves to correct soil acidity, raising its pH. Correcting the soil with limestone improves the efficiency of fertilizers, stimulates root development, and consequently increases crop productivity. Additionally, limestone is fundamental for various industries, being used in the manufacture of cement for civil construction, in the production of iron, steel, glass, paper, and paints.",
     "description_es": "En la agricultura, su uso principal es en la práctica del encalado, que sirve para corregir la acidez del suelo, elevando su pH. La corrección del suelo con caliza mejora la eficiencia de los fertilizantes, estimula el desarrollo de las raíces y, consecuentemente, aumenta la productividad del cultivo. Además, la caliza es fundamental para diversas industrias, siendo utilizada en la fabricación de cemento para la construcción civil, en la producción de hierro, acero, vidrio, papel y pinturas.",
     "photo": "/images/minerals/calcario.png",
-    "source": "Dylan McLeod"
+    "source": "Dylan McLeod",
+    "symbol": "Ca",
+    "tagline": "Agricultura e cimento",
+    "tagline_en": "Agriculture and cement",
+    "tagline_es": "Agricultura y cemento"
   },
   "niobio": {
     "id": "niobio",
@@ -74,7 +98,11 @@
     "description_en": "The main industrial function of niobium is to strengthen metal alloys, such as steel.\n\nIt also stands out in other uses, such as an electrical superconductor (when at low temperatures), which makes it ideal for use in medical imaging equipment such as MRI scanners.",
     "description_es": "La principal función industrial del niobio es fortalecer las aleaciones metálicas, como por ejemplo el acero.\n\nTambién destaca en otros usos, como superconductor eléctrico (cuando está a bajas temperaturas), lo que lo hace ideal para ser utilizado en equipos de diagnóstico de imágenes como la resonancia magnética.",
     "photo": "/images/minerals/niobio.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Nb",
+    "tagline": "Ligas de aço",
+    "tagline_en": "Steel alloys",
+    "tagline_es": "Aleaciones de acero"
   },
   "fosfato": {
     "id": "fosfato",
@@ -85,7 +113,11 @@
     "description_en": "Phosphate is a mineral widely used in crop fertilizers, as well as a food additive (such as emulsifiers, stabilizers, acidulants, and texturizers).",
     "description_es": "El fosfato es un mineral ampliamente utilizado en fertilizantes para plantaciones, además de su uso como aditivo alimentario (como emulsionantes, estabilizadores, acidulantes y texturizantes).",
     "photo": "/images/minerals/fosfato.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "P",
+    "tagline": "Fertilizantes",
+    "tagline_en": "Fertilizers",
+    "tagline_es": "Fertilizantes"
   },
   "prata": {
     "id": "prata",
@@ -96,7 +128,11 @@
     "description_en": "Silver is a mineral used in an extremely similar way to gold. It has high electrical conductivity and is therefore used in the production of electronics. Additionally, due to its aesthetic appearance, it is also used in the production of jewelry and household utensils.",
     "description_es": "La plata es un mineral que se utiliza de forma extremadamente similar al oro. Tiene una alta conductividad eléctrica y, por eso, se utiliza en la producción de electrónicos. Además, por su apariencia estética, también se utiliza en la producción de joyería y utensilios domésticos.",
     "photo": "/images/minerals/prata.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Ag",
+    "tagline": "Eletrônica e joalheria",
+    "tagline_en": "Electronics and jewelry",
+    "tagline_es": "Electrónica y joyería"
   },
   "chumbo": {
     "id": "chumbo",
@@ -107,7 +143,11 @@
     "description_en": "Lead is an extremely versatile mineral. It is used in the production of:\n\nBatteries, tetraethyl lead (a gasoline additive), radiation shielding, solder components, pigments for the naval industry, electrical coatings, etc.",
     "description_es": "El plomo es un mineral extremadamente versátil. Se utiliza en la producción de:\n\nBaterías, tetraetilo de plomo (un aditivo de gasolina), blindaje contra radiación, componentes de soldadura, pigmentos para la industria naval, revestimientos eléctricos, etc.",
     "photo": "/images/minerals/chumbo.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Pb",
+    "tagline": "Baterias e blindagem",
+    "tagline_en": "Batteries and shielding",
+    "tagline_es": "Baterías y blindaje"
   },
   "tantalo": {
     "id": "tantalo",
@@ -118,7 +158,11 @@
     "description_en": "Its most prominent use is in the manufacture of electronic components, especially high-performance capacitors for devices such as cell phones, computers, and digital cameras, enabling circuit miniaturization. Additionally, tantalum is used in metallic superalloys for the aerospace and armaments industry, in jet engine parts, missiles, and nuclear reactors, due to its high melting point and resistance.",
     "description_es": "Su uso más destacado es en la fabricación de componentes electrónicos, especialmente en capacitores de alto rendimiento para dispositivos como teléfonos móviles, computadoras y cámaras digitales, permitiendo la miniaturización de los circuitos. Además, el tántalo se emplea en superaleaciones metálicas para la industria aeroespacial y de armamentos, en piezas de motores a reacción, misiles y reactores nucleares, debido a su alto punto de fusión y resistencia.",
     "photo": "/images/minerals/tantalo.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Ta",
+    "tagline": "Eletrônica avançada",
+    "tagline_en": "Advanced electronics",
+    "tagline_es": "Electrónica avanzada"
   },
   "bauxita": {
     "id": "bauxita",
@@ -129,7 +173,11 @@
     "description_en": "Bauxite is the main raw material for the production of aluminum, with approximately 85% to 95% of all bauxite extracted worldwide destined for this purpose. The process involves refining the ore to obtain alumina (aluminum oxide), which is subsequently transformed into metallic aluminum.",
     "description_es": "La bauxita es la principal materia prima para la producción de aluminio, con aproximadamente el 85% al 95% de toda la bauxita extraída en el mundo destinada a este fin. El proceso implica el refinado del mineral para obtener alúmina (óxido de aluminio), que posteriormente se transforma en aluminio metálico.",
     "photo": "/images/minerals/bauxita.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Al",
+    "tagline": "Produção de alumínio",
+    "tagline_en": "Aluminum production",
+    "tagline_es": "Producción de aluminio"
   },
   "quartzo": {
     "id": "quartzo",
@@ -140,7 +188,11 @@
     "description_en": "In its most common form, as sand, it is an essential component in construction for the production of concrete and mortar, and also in the manufacture of glass and ceramics. High-quality quartz crystals are fundamental for the electronics industry due to their piezoelectric properties, being used in oscillators for clocks, computers, and radios, as well as in the manufacture of optical fibers and special lenses.",
     "description_es": "En su forma más común, como arena, es un componente esencial en la construcción civil para la producción de concreto y mortero, y también en la fabricación de vidrio y cerámica. Los cristales de cuarzo de alta calidad son fundamentales para la industria electrónica debido a sus propiedades piezoeléctricas, siendo utilizados en osciladores para relojes, computadoras y radios, además de en la fabricación de fibras ópticas y lentes especiales.",
     "photo": "/images/minerals/quartzo.png",
-    "source": "Fotógrafa: J Yeo"
+    "source": "Fotógrafa: J Yeo",
+    "symbol": "Si",
+    "tagline": "Eletrônica e construção",
+    "tagline_en": "Electronics and construction",
+    "tagline_es": "Electrónica y construcción"
   },
   "zinco": {
     "id": "zinco",
@@ -151,7 +203,11 @@
     "description_en": "Zinc is a material widely used by industry in the galvanization process, which aims to mitigate the effects of oxidation and corrosion in metallic materials.\n\nAdditionally, it is also used in the production of metal alloys, such as brass and bronze, as well as in the production of batteries.",
     "description_es": "El zinc es un material ampliamente utilizado por la industria en el proceso de galvanización, cuyo objetivo es mitigar los efectos de la oxidación y corrosión en materiales metálicos.\n\nAdemás, también se utiliza en la producción de aleaciones metálicas, como el bronce y el latón, además de su uso en la producción de baterías.",
     "photo": "/images/minerals/zinco.png",
-    "source": "Dave Hoefler"
+    "source": "Dave Hoefler",
+    "symbol": "Zn",
+    "tagline": "Galvanização",
+    "tagline_en": "Galvanization",
+    "tagline_es": "Galvanización"
   },
   "estanho": {
     "id": "estanho",
@@ -162,7 +218,11 @@
     "description_en": "Tin is a versatile metal with a wide range of applications, best known for its use in metal alloys, such as bronze (combined with copper) and, crucially, as solder in the electronics industry due to its low melting point.\n\nAdditionally, tin is used in the manufacturing process of flat glass, in chemical compounds for paints and pigments, and in hygiene products, such as stannous fluoride in toothpastes.",
     "description_es": "El estaño es un metal versátil con una amplia gama de aplicaciones, mejor conocido por su uso en aleaciones metálicas, como el bronce (junto con el cobre) y, crucialmente, como soldadura en la industria electrónica debido a su bajo punto de fusión.\n\nAdemás, el estaño se utiliza en el proceso de fabricación de vidrios planos, en compuestos químicos para pinturas y pigmentos, y en productos de higiene, como el fluoruro de estaño en pastas dentales.",
     "photo": "/images/minerals/estanho.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Sn",
+    "tagline": "Solda e ligas metálicas",
+    "tagline_en": "Solder and metal alloys",
+    "tagline_es": "Soldadura y aleaciones"
   },
   "caulim": {
     "id": "caulim",
@@ -173,7 +233,11 @@
     "description_en": "Kaolin, a clay mineral, has its main industrial applications in paper manufacturing, where it acts as a filler and coating agent to improve whiteness, opacity, and finish.\n\nIt is also a fundamental raw material in the ceramics industry for the production of porcelain, crockery, floor tiles, and wall tiles. Its uses further extend to the manufacture of plastics, cosmetics, pharmaceuticals, cement, fiberglass, and as an inert carrier for insecticides.",
     "description_es": "El caolín, un mineral arcilloso, tiene como principales aplicaciones industriales la fabricación de papel, donde actúa como agente de relleno y cobertura para mejorar la blancura, la opacidad y el acabado.\n\nTambién es una materia prima fundamental en la industria cerámica para la producción de porcelanas, vajillas, pisos y azulejos. Sus usos se extienden además a la fabricación de plásticos, cosméticos, productos farmacéuticos, cemento, fibra de vidro y como vehículo inerte para insecticidas.",
     "photo": "/images/minerals/caulim.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Cm",
+    "tagline": "Papel e cerâmica",
+    "tagline_en": "Paper and ceramics",
+    "tagline_es": "Papel y cerámica"
   },
   "silica": {
     "id": "silica",
@@ -184,7 +248,11 @@
     "description_en": "Silica is widely used due to its high moisture absorption capacity, commonly found in sachets that protect food, footwear, bags, and electronic equipment. It is also used in the paint, adhesive, cosmetics, and construction industries (in the production of concrete and cement), as well as in the manufacture of semiconductors.",
     "description_es": "La sílice es ampliamente utilizada debido a su alta capacidad de absorción de humedad, siendo común encontrarla en bolsitas que protegen alimentos, calzados, bolsos y equipos electrónicos. Además, se emplea en la industria de pinturas, adhesivos, cosméticos, construcción civil (en la producción de concreto y cemento) y en la fabricación de semiconductores.",
     "photo": "/images/minerals/silica.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "SiO2",
+    "tagline": "Semicondutores",
+    "tagline_en": "Semiconductors",
+    "tagline_es": "Semiconductores"
   },
   "terra-rara": {
     "id": "terra-rara",
@@ -195,7 +263,11 @@
     "description_en": "Rare earths are a group of 17 chemical elements essential in various high-technology industrial applications. They are primarily used in the manufacture of high-power permanent magnets, essential for wind turbines, electric vehicle motors, and electronic equipment. They are also used in rechargeable batteries, catalysts for automotive emissions control, fluorescent lamps, lasers, optical fibers, efficient lighting systems, production of special glasses, ceramics, and superconductors.",
     "description_es": "Las tierras raras son un grupo de 17 elementos químicos esenciales en diversas aplicaciones industriales de alta tecnología. Se utilizan principalmente en la fabricación de imanes permanentes de alta potencia, esenciales para turbinas eólicas, motores de vehículos eléctricos y equipos electrónicos. También se emplean en baterías recargables, catalizadores para el control de emisiones automotrices, lámparas fluorescentes, láseres, fibras ópticas, sistemas de iluminación eficientes, producción de vidrios especiales, cerámicas y superconductores.",
     "photo": null,
-    "source": ""
+    "source": "",
+    "symbol": "TR",
+    "tagline": "Alta tecnologia",
+    "tagline_en": "High technology",
+    "tagline_es": "Alta tecnología"
   },
   "manganes": {
     "id": "manganes",
@@ -206,7 +278,11 @@
     "description_en": "Manganese is an essential mineral widely used in various industries, standing out mainly in the production of steels and metal alloys, where it improves the resistance, hardness, and malleability of materials. It is also used in the manufacture of batteries, fertilizers, glass, and ceramics.",
     "description_es": "El manganeso es un mineral esencial ampliamente utilizado en diversas industrias, destacándose principalmente en la producción de aceros y aleaciones metálicas, donde mejora la resistencia, dureza y maleabilidad de los materiales. Además, se emplea en la fabricación de baterías, fertilizantes, vidrio y cerámica.",
     "photo": "/images/minerals/manganes.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Mn",
+    "tagline": "Aços especiais",
+    "tagline_en": "Special steels",
+    "tagline_es": "Aceros especiales"
   },
   "niquel": {
     "id": "niquel",
@@ -217,7 +293,11 @@
     "description_en": "Nickel is a metal widely used in industry due to its high resistance to corrosion and ability to improve the mechanical properties of other metals.\n\nIt is also essential in the production of rechargeable batteries (such as nickel-cadmium and nickel-metal hydride batteries, used in electronics and electric vehicles), in coin minting, and in the manufacture of magnets.",
     "description_es": "El níquel es un metal muy utilizado en la industria debido a su alta resistencia a la corrosión y su capacidad para mejorar las propiedades mecánicas de otros metales.\n\nTambién es esencial en la producción de baterías recargables (como las baterías de níquel-cadmio y níquel-metal hidruro, usadas en electrónicos y vehículos eléctricos), en la acuñación de monedas y en la fabricación de imanes.",
     "photo": "/images/minerals/niquel.png",
-    "source": "AI"
+    "source": "AI",
+    "symbol": "Ni",
+    "tagline": "Resistência à corrosão",
+    "tagline_en": "Corrosion resistance",
+    "tagline_es": "Resistencia a la corrosión"
   },
   "agua-mineral": {
     "id": "agua-mineral",
@@ -228,7 +308,11 @@
     "description_en": "Mineral water is a natural resource extracted from underground sources, characterized by the presence of dissolved minerals such as calcium, magnesium, sodium, and potassium. Minas Gerais has important aquifers that supply recognized mineral water brands in Brazil.",
     "description_es": "El agua mineral es un recurso natural extraído de fuentes subterráneas, caracterizándose por la presencia de minerales disueltos como calcio, magnesio, sodio y potasio. Minas Gerais posee importantes acuíferos que abastecen marcas reconocidas de agua mineral en Brasil.",
     "photo": "",
-    "source": ""
+    "source": "",
+    "symbol": "H2O",
+    "tagline": "Recurso natural",
+    "tagline_en": "Natural resource",
+    "tagline_es": "Recurso natural"
   },
   "cobre": {
     "id": "cobre",
@@ -239,6 +323,10 @@
     "description_en": "Copper is widely used in industry due to its excellent electrical and thermal conductivity, corrosion resistance, and malleability. It is fundamental in the manufacture of electrical wires and cables, electronic components, heating, ventilation and air conditioning systems, and water and gas pipes.",
     "description_es": "El cobre es ampliamente utilizado en la industria debido a su excelente conductividad eléctrica y térmica, resistencia a la corrosión y maleabilidad. Es fundamental en la fabricación de cables y alambres eléctricos, componentes electrónicos, sistemas de calefacción, ventilación y aire acondicionado, y tuberías para agua y gas.",
     "photo": "/images/minerals/cobre.png",
-    "source": "Paul-Alain Hunt"
+    "source": "Paul-Alain Hunt",
+    "symbol": "Cu",
+    "tagline": "Condutividade elétrica",
+    "tagline_en": "Electrical conductivity",
+    "tagline_es": "Conductividad eléctrica"
   }
 }

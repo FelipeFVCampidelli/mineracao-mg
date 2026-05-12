@@ -1,2 +1,28 @@
-/.DS_Store
-/node_modules
+# macOS
+.DS_Store
+
+# Web
+web/node_modules/
+web/dist/
+
+# iOS
+ios/*.xcodeproj
+ios/*.xcworkspace
+ios/build/
+ios/DerivedData/
+ios/Pods/
+ios/.swiftpm/
+
+# Android
+android/.gradle/
+android/.idea/
+android/build/
+android/app/build/
+android/local.properties
+android/captures/
+*.apk
+*.aab
+
+# IDE
+*.iml
+.vscode/

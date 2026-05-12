@@ -1,10 +1,15 @@
 # Mineração MG
 
-Plataforma de visualização interativa da mineração de Minas Gerais. Permite explorar as 12 mesorregiões do estado, os minérios extraídos em cada uma e os municípios produtores. Suporta português, inglês e espanhol.
+Plataforma multiplataforma de visualização interativa da mineração de Minas Gerais. Permite explorar as 12 mesorregiões do estado, os minérios extraídos em cada uma e os municípios produtores.
 
-## Como rodar localmente
+Disponível em três plataformas: **Web** (React + Leaflet), **iOS** (SwiftUI + MapKit) e **Android** (Jetpack Compose + OpenStreetMap).
+
+## Web
+
+### Como rodar
 
 ```bash
+cd web
 npm install
 npm run dev
 ```
@@ -13,48 +18,102 @@ Acesse `http://localhost:5173/mineracao-mg/`
 
 > O projeto usa `base: '/mineracao-mg/'` no Vite para compatibilidade com o GitHub Pages. Por isso o prefixo é necessário mesmo em dev.
 
+### Deploy
+
+O projeto está configurado para GitHub Pages via GitHub Actions. Qualquer push na branch `main` dispara o deploy automático.
+
+## iOS
+
+### Requisitos
+
+- Xcode 15.4+
+- iOS 17.0+
+- [XcodeGen](https://github.com/yonaskolb/XcodeGen)
+
+### Como rodar
+
+```bash
+cd ios
+xcodegen generate
+open MineracaoMG.xcodeproj
+```
+
+Selecione um simulador e rode (⌘R).
+
+### Stack
+
+- **SwiftUI** — UI declarativa
+- **MapKit** — mapa com polígonos GeoJSON e máscara inversa (even-odd fill)
+- **NavigationStack** — navegação intra-sheet (minérios → detalhe / municípios)
+
+## Android
+
+### Requisitos
+
+- Android Studio Hedgehog+
+- SDK 26+ (target 34)
+
+### Como rodar
+
+1. Abra a pasta `android/` no Android Studio
+2. Aguarde o Gradle sync
+3. Selecione um emulador ou dispositivo e rode (▶)
+
+### Stack
+
+- **Jetpack Compose** — UI declarativa com Material3
+- **osmdroid** — mapa OpenStreetMap com tiles CartoDB Dark Matter
+- **Coil** — carregamento de imagens dos assets
+- **kotlinx.serialization** — parsing de JSON
+
 ## Estrutura do projeto
 
 ```
-src/
-  pages/
-    WelcomeScreen.jsx       # Tela inicial (2 steps)
-    MapPage.jsx             # Mapa principal com GeoJSON do IBGE
-    RegionPage.jsx          # Tela de região (Minérios / Municípios)
-    MineralsPage.jsx        # Lista de minérios da região
-    MunicipalitiesPage.jsx  # Lista de municípios (paginada)
-    MineralDetailPage.jsx   # Detalhe do minério com foto e descrição
+web/
+  src/
+    pages/                    # Telas (Welcome, Map, Region, Minerals, MineralDetail, Municipalities)
+    components/               # Componentes reutilizáveis (BackButton, RegionModal, LocaleSelector)
+    hooks/                    # Hooks (useGeoJSON, useData, useLocale, useMunicipalities)
+    data/
+      minerals.json           # Dados de todos os minérios (pt/en/es)
+      states/mg.json          # Regiões e municípios de MG
+  public/
+    images/minerals/          # Fotos dos minérios (.png)
+    icons/                    # Ícones do app (favicon, PWA)
 
-  components/
-    BackButton.jsx          # Botão de voltar reutilizável
-    RegionModal.jsx         # Modal de detalhe ao clicar numa região no mapa
-    RegionShape.jsx         # Miniatura do shape da região no modal
-    LocaleSelector.jsx      # Seletor de idioma (PT / EN / ES)
+ios/
+  MineracaoMG/
+    Views/                    # SwiftUI views (ContentView, MapKitView, RegionSheet, etc.)
+    ViewModels/               # AppData (state management)
+    Models/                   # Mineral, Region, AppLocale
+    Services/                 # DataService, GeoJSONService, MunicipalitiesService
+    Resources/                # minerals.json, mg.json, Media.xcassets (imagens + AppIcon)
+  project.yml                 # Configuração XcodeGen
 
-  hooks/
-    useGeoJSON.js           # Busca GeoJSON das mesorregiões da API do IBGE em runtime
-    useData.js              # Lê os JSONs de regiões e minérios
-    useLocale.js            # Gerencia o idioma ativo (global, sem Context)
-    useMunicipalities.js    # Carrega e filtra municípios por região
-
-  data/
-    index.js                # Registro central de estados e regiões
-    i18n.json               # Strings de UI traduzidas (pt / en / es)
-    minerals.json           # Dados de todos os minérios
-    states/
-      mg.json               # Regiões e municípios de MG
-
-  styles/
-    global.css              # Variáveis CSS e reset global
-
-public/
-  images/
-    minerals/               # Fotos dos minérios (.png)
+android/
+  app/src/main/
+    kotlin/com/mineracaomg/
+      ui/                     # Compose screens (MainScreen, MapView, RegionSheet, MineralDetail, etc.)
+      ui/theme/               # Material3 theme (dark)
+      AppViewModel.kt         # State management
+      Models.kt               # Mineral, Region, AppLocale, SheetScreen
+      DataService.kt          # Leitura de JSONs dos assets
+      GeoJSONService.kt       # Fetch de GeoJSON do IBGE
+    assets/                   # minerals.json, mg.json, imagens
+    res/mipmap-*/             # Ícones do app (adaptive icon)
 ```
 
-## Formato do minerals.json
+## Dados compartilhados
 
-Cada entrada em `src/data/minerals.json` segue o formato:
+As três plataformas compartilham a mesma estrutura de dados:
+
+- **minerals.json** — catálogo de minérios com título, descrição, foto e símbolo em três idiomas (pt/en/es)
+- **mg.json** — mapeamento de mesorregiões para seus minérios
+- **GeoJSON** — polígonos das mesorregiões buscados em runtime da API do IBGE
+
+## Adicionando um novo minério
+
+1. Adicione a entrada em `minerals.json` (web, iOS e Android têm cópias independentes):
 
 ```json
 "id-do-minerio": {
@@ -62,46 +121,18 @@ Cada entrada em `src/data/minerals.json` segue o formato:
   "title": "Nome em português",
   "title_en": "Name in English",
   "title_es": "Nombre en español",
-  "description": "Descrição em português.\n\nParágrafo separado por linha em branco.",
+  "description": "Descrição em português.",
   "description_en": "",
   "description_es": "",
   "photo": "/images/minerals/id-do-minerio.png",
-  "source": "Crédito da foto"
+  "source": "Crédito da foto",
+  "symbol": "Xx",
+  "tagline": "Uso principal",
+  "tagline_en": "Main use",
+  "tagline_es": "Uso principal"
 }
 ```
 
-A foto deve ser salva em `public/images/minerals/` e o campo `photo` usa caminho absoluto a partir da raiz pública (o `BASE_URL` do Vite é aplicado automaticamente nos componentes).
+2. Salve a foto em `web/public/images/minerals/`, `ios/MineracaoMG/Resources/Media.xcassets/` (como imageset) e `android/app/src/main/assets/images/minerals/`.
 
-## Adicionando um novo minério
-
-1. Adicione a entrada no `src/data/minerals.json` seguindo o formato acima.
-2. Salve a foto em `public/images/minerals/id-do-minerio.png`.
-3. Adicione o `id` no array `minerals` da região correspondente em `src/data/states/mg.json`.
-4. Adicione o nome de exibição nos três idiomas em `MINERAL_NAMES` dentro de `src/components/RegionModal.jsx` e em `src/pages/MineralsPage.jsx`.
-
-## Expandindo para outros estados
-
-1. Adicione o estado em `src/data/index.js`:
-
-```js
-sp: {
-  id: 'sp',
-  name: 'São Paulo',
-  bounds: [[-25.3, -53.1], [-19.8, -44.2]],
-  ibgeCode: 35,
-  regions: [
-    { id: 'metropolitana-sp', name: 'Metropolitana de SP', color: '#FF6B6B', ibgeName: 'Metropolitana de São Paulo' },
-    // ...
-  ]
-}
-```
-
-2. Crie `src/data/states/sp.json` com as regiões e municípios, seguindo a estrutura de `mg.json`.
-
-3. Atualize `src/hooks/useData.js` para carregar o novo estado.
-
-4. O fluxo de rotas `/:stateId/:regionId` já suporta múltiplos estados sem alteração.
-
-## Deploy
-
-O projeto está configurado para GitHub Pages via GitHub Actions. Qualquer push na branch `main` dispara o deploy automático.
+3. Adicione o `id` no array `minerals` da região correspondente em `mg.json` de cada plataforma.
